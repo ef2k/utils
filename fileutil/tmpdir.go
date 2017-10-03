@@ -18,5 +18,5 @@ type TmpDir struct {
 }
 
 func (t *TmpDir) Remove() error {
-	return os.Remove(t.Path)
+	return os.RemoveAll(t.Path)
 }
